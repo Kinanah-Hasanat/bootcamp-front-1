@@ -22,7 +22,7 @@ a{
 .row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+  
     align-items: center;
 }
 
@@ -53,4 +53,30 @@ a{
     .list{display: none;}
      .icon_hidden {display: none;}
      .menu{ display: block;}
+}
+
+
+.collections .row{
+    gap: 30px;
+}
+
+.collection{
+    text-align: center;
+    width: calc((100% - 90px) / 4);
+}
+
+.header .row{
+      justify-content: space-between;
+}
+
+.collection img{
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px){
+   .collection{width: calc((100% - 30px) / 2);} 
+}
+
+@media screen and (min-width: 330px) and (max-width: 599px){
+   .collection{width: 100%;} 
 }
