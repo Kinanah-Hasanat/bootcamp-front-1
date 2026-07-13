@@ -45,3 +45,12 @@ a{
 .header{
     padding: 31.48px 0;
 }
+
+.menu{display: none;}
+
+@media screen and (min-width:320px) and (max-width:600px){
+    .container{ width: calc(100% - 40px);}
+    .list{display: none;}
+     .icon_hidden {display: none;}
+     .menu{ display: block;}
+}
